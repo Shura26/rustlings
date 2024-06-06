@@ -13,10 +13,23 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+
 
 // Put your function here!
-// fn calculate_price_of_apples {
+    fn calculate_price_of_apples(quantity: i32) -> i32 {	// Attend un entier et retourne un entier
+    let total:i32;					        // Prix total qui va etre reetourner par la fonction a la fin
+    if quantity > 40 {						// Si plus de 40 pommes le prix = 1 sinon prix = 2 	
+       let  price = 1;
+       total = quantity * price;				// Calcule quantitée * prix.
+    }
+
+    else {
+        let price =2;
+        total = quantity * price;
+    }    
+    return total;						// Retourne le total calculé 
+
+}
 
 // Don't modify this function!
 #[test]

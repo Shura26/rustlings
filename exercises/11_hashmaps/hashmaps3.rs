@@ -15,6 +15,7 @@
 // Execute `rustlings hint hashmaps3` or use the `hint` watch subcommand for a
 // hint.
 
+<<<<<<< HEAD:exercises/11_hashmaps/hashmaps3.rs
 // I AM NOT DONE
 
 use std::collections::HashMap;
@@ -85,3 +86,8 @@ mod tests {
         assert_eq!(team.goals_conceded, 2);
     }
 }
+=======
+fn tests() {
+    println!("yo");
+}
+>>>>>>> recov-branch:exercises/hashmaps/hashmaps3.rs

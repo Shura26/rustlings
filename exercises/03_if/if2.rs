@@ -5,15 +5,19 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
-    } else {
-        1
+    } 
+    else if fizzish == "fuzz"{
+        "bar"
+    }
+    else {
+        "baz"
     }
 }
+
 
 // No test changes needed!
 #[cfg(test)]
@@ -35,3 +39,6 @@ mod tests {
         assert_eq!(foo_if_fizz("literally anything"), "baz")
     }
 }
+
+
+//il n' y a pas de conditions pour renvoyer bar et baz, donc il faut les ajouter dans foo_if_fizz
