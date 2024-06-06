@@ -7,9 +7,6 @@
 
 
 fn main() {
-<<<<<<< HEAD:exercises/00_intro/intro2.rs
-    printline!("Hello there!")
-=======
     println!("Hello!");
 >>>>>>> recov-branch:exercises/intro/intro2.rs
 }
