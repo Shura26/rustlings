@@ -12,11 +12,7 @@
 fn main() {
     let vec0 = vec![22, 44, 66];
 
-<<<<<<< HEAD:exercises/06_move_semantics/move_semantics4.rs
-    let vec1 = fill_vec(vec0);
-=======
     let mut vec1 = fill_vec();
->>>>>>> recov-branch:exercises/move_semantics/move_semantics4.rs
 
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
