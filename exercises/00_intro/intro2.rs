@@ -8,5 +8,4 @@
 
 fn main() {
     println!("Hello!");
->>>>>>> recov-branch:exercises/intro/intro2.rs
 }
