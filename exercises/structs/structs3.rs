@@ -7,7 +7,6 @@
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 #[derive(Debug)]
 struct Package {
@@ -31,12 +30,15 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
+    fn is_international(&self) -> bool {
         // Something goes here...
+        self.sender_country != self.recipient_country
     }
 
-    fn get_fees(&self, cents_per_gram: u32) -> ??? {
+    fn get_fees(&self, cents_per_gram: u32) -> u32 {
         // Something goes here...
+        let fees = self.weight_in_grams * cents_per_gram;
+        return fees;
     }
 }
 
@@ -86,3 +88,8 @@ mod tests {
         assert_eq!(package.get_fees(cents_per_gram * 2), 9000);
     }
 }
+
+
+//Dans la fonction is_international() on retourne un bool pour savoir si le paquet est international, donc on va tester si la destination est different du pays d'envoie.
+//Dans la fonction get_fees() on calcule les frais et retourne le prix comme un entier u32
+//Les fonctions reçoit en argument le paquet en tant que "self" donc  on peux accèder aux données de la struct avec "self."
